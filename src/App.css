@@ -51,6 +51,7 @@ button {
 }
 
 table {
+  margin-top: 1.5rem;
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
@@ -75,6 +76,14 @@ tr {
   border: 1px solid #ddd;
 }
 
+.tr-blocked {
+  border: 1px solid #aaa;
+}
+
+.td-blocked {
+  padding: 1rem;
+}
+
 ul {
   text-align: left;
   font-size: 0.8em;
@@ -97,6 +106,11 @@ ul li {
 .proc-icon {
   font-size: 2rem;
   color: green;
+}
+
+.share-icon {
+  margin: .5rem;
+  font-size: 1.5rem;
 }
 
 .proc-title {
@@ -126,7 +140,7 @@ ul li {
 
 .form-btn {
   width: 100%;
-  /* margin: 1em auto; */
+  margin: 1em auto;
   display: block;
 }
 
@@ -141,3 +155,25 @@ ul li {
   border: 2px solid red;
 
 }
+
+.wrap {
+  padding: 1rem;
+}
+
+.mini-box-share {
+  margin: auto;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  margin-bottom: 0.5em;
+}
+
+.input-share {
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.left-align {
+  text-align: left;
+}
+

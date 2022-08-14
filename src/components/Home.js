@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaSuitcase, FaPencilAlt, FaKey, FaAddressCard } from 'react-icons/fa';
+import { FaSuitcase, FaPencilAlt, FaKey, FaAddressCard, FaWhatsappSquare, FaFacebook, FaTwitter } from 'react-icons/fa';
 
 const Home = () => {
   return (
@@ -70,6 +70,7 @@ const Home = () => {
       <section>
         <h1>Procedures</h1>
         <div className='mini-box'>
+        <div className='wrap'>
           <FaSuitcase className='proc-icon' />
           <h3 className='proc-title'>Select Plan</h3>
           <p className='box-para'>
@@ -78,23 +79,29 @@ const Home = () => {
             offer
           </p>
         </div>
+        </div>
         <div className='mini-box'>
+        <div className='wrap'>
           <FaPencilAlt className='proc-icon' />
           <h3 className='proc-title'>Fill in correct information</h3>
           <p className='box-para'>
             Fill in your correct information when submitting your contact
             information to ensure that you get the best out of our services
           </p>
+          </div>
         </div>
         <div className='mini-box'>
+        <div className='wrap'>
           <FaKey className='proc-icon' />
           <h3 className='proc-title'>Secure Your Password</h3>
           <p className='box-para'>
             After your successful payment, you will be given a unique password
             which will be required to download the contact file
           </p>
+          </div>
         </div>
         <div className='mini-box'>
+        <div className='wrap'>
           <FaAddressCard className='proc-icon' />
           <h3 className='proc-title'>Download Compiled Contracts</h3>
           <p className='box-para'>
@@ -102,9 +109,11 @@ const Home = () => {
             uploaded by 9:00pm in a .vcf format. This contact file will also be
             saved by others
           </p>
+          </div>
         </div>
       </section>
-      <section>
+      <section className='mini-box'>
+        <div className='wrap'> 
         <h2>Submit your name and number</h2>
         <p>
           Submit your name and number to be compiled for download by yourself
@@ -138,6 +147,50 @@ const Home = () => {
           </div>
           <button className='form-btn'>Submit</button>
         </form>
+        </div>
+      </section>
+      <section className='mini-box-share'>
+        <div className='wrap'>
+          <p>Would you like to share with your friends?</p>
+          <textarea className='input-share'>
+          Are You Tired of Getting Embarrassing WhatsApp Status Views? 😳😳🤷🏻‍♂️🤷🏻‍♂️
+👉https://johndoe .com
+          </textarea>
+        </div>
+        <div>
+          <p>Or use the share buttons below</p>
+          <div>
+            <FaWhatsappSquare className='share-icon'/>
+            <FaFacebook className='share-icon'/>
+            <FaTwitter className='share-icon'/>
+          </div>
+        </div>
+      </section>
+      <section className='mini-box-share'>
+        <div className='wrap'>
+          <h1>Blocked Contacts</h1>
+          <p className='left-align'>Here is a list of the last 5 blocked contacts who have been found violating our rules and will therefore not be included in future compilations</p>
+      <table>
+        <tr className='tr-blocked'>
+          <td className='td-blocked'>ffhe</td>
+        </tr>
+        <tr className='tr-blocked'>
+          <td className='td-blocked'>he</td>
+        </tr>
+        <tr className='tr-blocked'>
+          <td className='td-blocked'>he</td>
+        </tr>
+        <tr className='tr-blocked'>
+          <td className='td-blocked'>he</td>
+        </tr>
+        <tr className='tr-blocked'>
+          <td className='td-blocked'>he</td>
+        </tr>
+        
+      </table>
+      <hr />
+        
+        </div>
       </section>
     </>
   );
